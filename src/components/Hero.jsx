@@ -75,15 +75,16 @@ const Hero = () => {
                 boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
               }}
               onClick={() => {
-                const link = document.createElement("a");
-                link.href = "/assets/resume.pdf";
-                link.download = "Nazmul_Khan_Resume.pdf";
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                if (typeof window !== "undefined") {
+                  const link = document.createElement("a");
+                  link.href = "/assets/resume.pdf";
+                  link.download = "Nazmul_Khan_Resume.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }
               }}
-              className='z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border
-             border-purple-400 rounded-xl'
+              className='z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl'
             >
               Download CV
             </motion.button>
