@@ -20,6 +20,16 @@ const projects = [
   },
   {
     img: project2,
+    title: "Cocktail Website",
+    description:
+      "This fullstack React app uses GSAP for smooth scroll animations, parallax, and synchronized video playback, built with Tailwind CSS and Vite for fast, interactive UI.",
+    links: {
+      site: "https://cocktail-naz.vercel.app/",
+      github: "https://github.com/AnKay930/cocktail",
+    },
+  },
+  {
+    img: project3,
     title: "TinDog Website",
     description: "A fullstack application built with Node.js and MongoDB.",
     links: {
@@ -28,7 +38,7 @@ const projects = [
     },
   },
   {
-    img: project3,
+    img: project4,
     title: "Wendy's Redesigned",
     description:
       "Redesigned Wendy's website for a modern, user-friendly experience with enhanced navigation, responsive design, and improved accessibility.",
